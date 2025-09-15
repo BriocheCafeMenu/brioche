@@ -1,0 +1,302 @@
+/* Скидання стилів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Навбар */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  z-index: 10;
+}
+
+.logo >img{
+width: 50px;
+height: 50px;
+border-radius: 100%;
+}
+
+.menu-toggle {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none; /* сховано на десктопах */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size:1.5rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffcc66;
+}
+
+/* Hero секція */
+.hero {
+  height: 90vh;
+  width: 100%;
+  background: url("img/main/2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* показуємо гамбургер */
+  }
+  .nav-links {
+    position: absolute;
+    top:84px;
+    right: 0;
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    /* height: 50vh; */
+border-radius:0 0 15px 15px;
+    padding: 20px;
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+    text-align: center;
+padding-top: 50px; 
+padding-bottom: 50px;
+ }
+}
+
+/* Секція меню */
+.menu {
+  padding: 80px 20px;
+  /* background: #f8f5f2; */
+  background: #c1d3db;
+background: linear-gradient(90deg, rgba(193, 211, 219, 1) 0%, rgba(204, 222, 211, 1) 36%, rgba(237, 223, 223, 1) 100%);
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #3b2e2a;
+}
+
+/* Кнопки вкладок */
+.menu-tabs {
+  margin-bottom: 40px;
+}
+
+.tab-btn {
+  background: none;
+  border: 2px solid #3b2e2a;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background: #3b2e2a;
+  color: #fff;
+}
+
+/* Контент вкладок */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Сітка карток */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+.menu-card {
+  background: linear-gradient(145deg, #f4f0ef, #fefefe);
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* Декоративна роздільна лінія */
+.menu-card h3 {
+  font-size: 1.9rem;
+  margin: 10px 0 8px;
+  color: #000000;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.menu-card p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 8px;
+  color: #6b4f4f;
+}
+
+
+/* .menu-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.menu-card h3 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #3b2e2a;
+}
+
+.menu-card p {
+  font-size: 1rem;
+  color: #6b4f4f;
+} */
+
+/* Контакти */
+.contacts {
+  background: #1c1c1c;
+  color: #f5f5f5;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contacts h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: #2a2a2a;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  background: #333;
+}
+
+.contact-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.contact-card p {
+  font-size: 1.1rem;
+}
+
+.contact-card a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-card a:hover {
+  color: #d8b8b8;
+}
