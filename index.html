@@ -15,7 +15,10 @@
   <!-- Навігація -->
   <header>
     <nav class="navbar">
+      <button id="logo-button" onclick="scrollToTop()">
       <div class="logo"><img src="img/main/bbbb.jpg" alt="logo"></div>
+
+      </button>
       <div class="menu-toggle" id="menu-toggle">&#9776;</div>
       <ul class="nav-links" id="nav-links">
         <li><a href="#menu">Menu</a></li>
@@ -28,7 +31,9 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Brioche cafe</h1>
-      <p>Czekamy na Ciebie</p>
+      <h2>Czas na kawę</h2>
+      <br>
+      <p>10:00 - 20:00</p>
     </div>
   </section>
     <!-- Меню -->
@@ -331,6 +336,12 @@
         document.getElementById(btn.dataset.tab).classList.add("active");
       });
     });
+
+
+    // Функція для прокрутки до верху
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
   </script>
 </body>
