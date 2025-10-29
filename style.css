@@ -145,6 +145,7 @@ padding-bottom: 50px;
  }
 }
 
+
 /* Секція меню */
 .menu {
   padding: 80px 20px;
@@ -329,4 +330,12 @@ background: linear-gradient(90deg, rgba(193, 211, 219, 1) 0%, rgba(204, 222, 211
 
 .contact-card a:hover {
   color: #d8b8b8;
+}
+
+
+.hero-content p {
+    font-size: 27px;
+}
+.daysGraf {
+  margin-top: 20px;
 }
