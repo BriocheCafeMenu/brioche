@@ -1,405 +1,425 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brioche Cafe</title>
-  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
-<link rel="shortcut icon" href="img/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-<link rel="manifest" href="img/favicon/site.webmanifest" />
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Brioche Cafe</title>
+
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+<link rel="shortcut icon" href="img/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+<link rel="manifest" href="img/favicon/site.webmanifest">
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Навігація -->
-  <header>
-    <nav class="navbar">
-      <button id="logo-button" onclick="scrollToTop()">
-      <div class="logo"><img src="img/main/bbbb.jpg" alt="logo"></div>
 
-      </button>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contacts">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+<nav class="navbar">
+<button id="logo-button" onclick="scrollToTop()">
+<div class="logo">
+<img src="img/main/bbbb.jpg" alt="logo">
+</div>
+</button>
 
-  <!-- Головний блок -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Brioche cafe</h1>
-      <h2>Czas na kawę</h2>
-      <br>
-      <p class="daysGraf">Pon - Piąt :</p>
-      <p>09:00 - 19:00</p>
-      <p class="daysGraf">Sobota, Niedziela :</p>
-      <p> 10:00 - 19:00</p>
-      <p class="daysGraf">Wtorek Nieczynne</p>
-    </div>
-  </section>
-    <!-- Меню -->
-  <section class="menu" id="menu">
-    <h2>Menu</h2>
-    <!-- Кнопки категорій -->
-    <div class="menu-tabs">
-      <button class="tab-btn active" data-tab="desserts">Desery</button>
-      <button class="tab-btn" data-tab="coffee">Kawa</button>
-      <button class="tab-btn" data-tab="cocktails">Koktajle</button>
-      <button class="tab-btn" data-tab="lunch">Śniadanie</button>
+<div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+<ul class="nav-links" id="nav-links">
+<li><a href="#menu">Menu</a></li>
+<li><a href="#contacts">Kontakt</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Brioche cafe</h1>
+<h2>Czas na kawę</h2>
+<p class="daysGraf">Pon - Piąt :</p>
+<p>09:00 - 19:00</p>
+<p class="daysGraf">Sobota, Niedziela :</p>
+<p>10:00 - 19:00</p>
+<p class="daysGraf">Wtorek Nieczynne</p>
+</div>
+</section>
+
+<section class="menu" id="menu">
+<h2>Menu</h2>
+
+<div class="menu-tabs">
+<button class="tab-btn active" data-tab="desserts">Desery</button>
+<button class="tab-btn" data-tab="coffee">Kawa</button>
+<button class="tab-btn" data-tab="briosz">Briosz</button>
+
+<button class="tab-btn" data-tab="cocktails">Koktajle</button>
+<button class="tab-btn" data-tab="lunch">Śniadanie</button>
+</div>
+
+<div class="menu-content">
+
+<div class="tab-content" id="briosz">
+<div class="card-grid">
+
+<div class="menu-card">
+<img src="img/kawa/affogato.jpeg" alt="briosz">
+<h3>Briosz - Karmelizowane Jabłko</h3>
+<p>16 zł</p>
+</div>
+<div class="menu-card">
+<img src="img/kawa/3.jpg" alt="briosz">
+<h3>Briosz - Kinder , Marshmellow</h3>
+<p>16 zł</p>
+</div>
+<div class="menu-card">
+<img src="img/kawa/affogato.jpeg" alt="briosz">
+<h3>Briosz - Lotus</h3>
+<p>16 zł</p>
+</div>
+<div class="menu-card">
+<img src="img/kawa/affogato.jpeg" alt="briosz">
+<h3>Briosz - Kit-Kat </h3>
+<p>16 zł</p>
+</div>
+<div class="menu-card">
+<img src="img/kawa/affogato.jpeg" alt="briosz">
+<h3>Briosz - Wiśnia , pistacja</h3>
+<p>16 zł</p>
+</div>
+<div class="menu-card">
+<img src="img/kawa/affogato.jpeg" alt="briosz">
+<h3>Briosz - Krem budyniowy , truskawka</h3>
+<p>16 zł</p>
+</div>
+<div class="menu-card">
+<img src="img/kawa/affogato.jpeg" alt="briosz">
+<h3>Briosz - Snickers</h3>
+<p>16 zł</p>
+</div>
+<div class="menu-card">
+<img src="img/kawa/affogato.jpeg" alt="briosz">
+<h3>Briosz - Kokos ,Chałwa</h3>
+<p>16 zł</p>
+</div>
+<div class="menu-card">
+<img src="img/kawa/affogato.jpeg" alt="briosz">
+<h3>Briosz - Ser , rodzynki</h3>
+<p>16 zł</p>
+</div>
+<div class="menu-card">
+<img src="img/kawa/affogato.jpeg" alt="briosz">
+<h3>Briosz - Malina , czekolada</h3>
+<p>16 zł</p>
+</div>
+
+</div>
+</div>
 
 
-    </div>
+<div class="tab-content" id="cocktails">
+<div class="card-grid">
 
-    <!-- Контент меню -->
-    <div class="menu-content">
+<div class="menu-card">
+<img src="img/cocktails/Soksw.jpeg" alt="sok">
+<h3>Sok - świeżo wyciskany</h3>
+<p>21 zł</p>
+</div>
 
-      <!-- Коктейлі -->
-      <div class="tab-content" id="cocktails">
-        <div class="card-grid">
-          <div class="menu-card">
-            <img src="img/cocktails/Soksw.jpeg" alt="sok">
-            <h3>Sok - świeżo wyciskany</h3>
-            <p>21 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cocktails/1.jpg" alt="Mohito">
-            <h3>Mohito</h3>
-            <p>22 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cocktails/2.jpg" alt="Lemoniada - Broskwinia Pomarańcza">
-            <h3>Lemoniada - Broskwinia Pomarańcza</h3>
-            <p>18 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cocktails/3.jpg" alt="Blue curacao">
-            <h3>Blue curacao</h3>
-            <p>19 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cocktails/4.jpg" alt="Апероль Спріц">
-            <h3>Aperol Spritz (bezalkoholowy)</h3>
-            <p>30 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cocktails/5.jpg" alt="Milk shake">
-            <h3>Milk shake</h3>
-            <p>19 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cocktails/6.jpg" alt="  Capuorange">
-            <h3>Capuorange</h3>
-            <p>22 zł</p>
-          </div>
-          <!-- <div class="menu-card">
-            <img src="img/cocktails/7.jpg" alt="Піна Колада">
-            <h3>Піна Колада</h3>
-            <p>170 zl</p>
-          </div> -->
-        </div>
-      </div>
+<div class="menu-card">
+<img src="img/cocktails/1.jpg" alt="Mohito">
+<h3>Mohito</h3>
+<p>22 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cocktails/2.jpg" alt="Lemoniada - Broskwinia Pomarańcza">
+<h3>Lemoniada - Broskwinia Pomarańcza</h3>
+<p>18 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cocktails/3.jpg" alt="Blue curacao">
+<h3>Blue curacao</h3>
+<p>19 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cocktails/4.jpg" alt="Апероль Спріц">
+<h3>Aperol Spritz (bezalkoholowy)</h3>
+<p>30 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cocktails/5.jpg" alt="Milk shake">
+<h3>Milk shake</h3>
+<p>19 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cocktails/6.jpg" alt="Capuorange">
+<h3>Capuorange</h3>
+<p>22 zł</p>
+</div>
+
+</div>
+</div>
+
 <div class="tab-content" id="lunch">
-        <div class="card-grid">
-          <div class="menu-card">
-            <img src="img/lunch/serniki.JPG" alt="Serniki">
-            <h3>Syrniki z sosem i śmietaną</h3>
-            <p>32 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/lunch/szakszuka.jpeg" alt="szakszuka">
-            <h3>Szakszuka</h3>
-            <p>34 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/lunch/sniad wiej.jpeg" alt="śniadanie wiejskie">
-            <h3>Śniadanie Wiejskie</h3>
-            <p>34 zł</p>
-          </div>
-           <div class="menu-card">
-            <img src="img/lunch/tost.jpeg" alt="Tost">
-            <h3>Tost z burratą i prosciutto</h3>
-            <p>35 zł</p>
-          </div>
-         
-        </div>
-      </div>
-      <!-- Кава -->
-      <div class="tab-content" id="coffee">
-        <div class="card-grid">
-           <div class="menu-card">
-            <img src="img/kawa/affogato.jpeg" alt="affogato">
-            <h3>Affogato</h3>
-            <p>22 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/kawa/1.jpg" alt="Espresso">
-            <h3>Espresso</h3>
-            <p>9 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/kawa/2.jpg" alt="Doppio">
-            <h3>Doppio</h3>
-            <p>12 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/kawa/3.jpg" alt="Americano">
-            <h3>Americano</h3>
-            <p>12 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/kawa/4.jpg" alt="Cappuccino">
-            <h3>Cappuccino</h3>
-            <p>12 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/kawa/5.jpg" alt=" Flat White">
-            <h3>Flat White</h3>
-            <p> 16 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/kawa/6.jpg" alt="  Latte">
-            <h3>Latte</h3>
-            <p>18 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/kawa/7.jpg" alt="Latte Macchiato ">
-            <h3>Latte Macchiato</h3>
-            <p>18 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/kawa/7.jpg" alt="iced late">
-            <h3>Iced Latte</h3>
-            <p>18 zł</p>
-        </div>
-          <div class="menu-card">
-            <img src="img/kawa/7.jpg" alt="Babyccino">
-            <h3>Babyccino</h3>
-            <p>16 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/kawa/7.jpg" alt="herbata">
-            <h3>Herbata</h3>
-            <p>16 zł</p>
-          </div>
-        </div>
-        </div>
+<div class="card-grid">
 
-      <!-- Десерти -->
-      <div class="tab-content active" id="desserts">
-        <div class="card-grid">
-          <!-- <div class="menu-card">
-            <img src="img/cake/1.jpg" alt="cake">
-            <h3>Brioszka - Karmelizowane jabłko/słona karamel</h3>
-            <p>20 zł</p>
-          </div> -->
+<div class="menu-card">
+<img src="img/lunch/serniki.JPG" alt="Serniki">
+<h3>Syrniki z sosem i śmietaną</h3>
+<p>32 zł</p>
+</div>
 
-          <!-- <div class="menu-card">
-            <img src="img/cake/1.jpg" alt="cake">
-            <h3>Brioszka - Tiramisu</h3>
-            <p>20 zł</p>
-          </div> -->
+<div class="menu-card">
+<img src="img/lunch/szakszuka.jpeg" alt="szakszuka">
+<h3>Szakszuka</h3>
+<p>34 zł</p>
+</div>
 
-          <!-- <div class="menu-card">
-            <img src="img/cake/1.jpg" alt="cake">
-            <h3>Brioszka - Wiśnia Pistacja</h3>
-            <p>20 zł</p>
-          </div> -->
+<div class="menu-card">
+<img src="img/lunch/sniad wiej.jpeg" alt="śniadanie wiejskie">
+<h3>Śniadanie Wiejskie</h3>
+<p>34 zł</p>
+</div>
 
-          <!-- <div class="menu-card">
-            <img src="img/cake/1.jpg" alt="cake">
-            <h3>Czarny las - ciastko</h3>
-            <p>23 zł</p>
-          </div> -->
+<div class="menu-card">
+<img src="img/lunch/tost.jpeg" alt="Tost">
+<h3>Tost z burratą i prosciutto</h3>
+<p>35 zł</p>
+</div>
 
+</div>
+</div>
 
-          <div class="menu-card">
-            <img src="img/cake/miod.JPG" alt="cake">
-            <h3>Miodownik karmelowy - gruszka karmel</h3>
-            <p>23 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cake/nappomar.jpeg" alt="cake">
-            <h3>Miodownik Pomarańcza</h3>
-            <p>23 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cake/miodmal.jpeg" alt="cake">
-            <h3>Miodownik Malina</h3>
-            <p>23 zł</p>
-          </div>
-           <div class="menu-card">
-            <img src="img/cake/napoleon.JPEG" alt="cake">
-            <h3>Napoleon klasyczny</h3>
-            <p>22 zł</p>
-          </div>
-           <div class="menu-card">
-            <img src="img/cake/napchok.JPEG" alt="cake">
-            <h3>Napoleon czekoladowy</h3>
-            <p>23 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cake/ester.JPG" alt="cake">
-            <h3>Esterhazy (bezglutenowe ciasto)</h3>
-            <p>23 zł</p>
-          </div>
-          
-         
+<div class="tab-content" id="coffee">
+<div class="card-grid">
 
-          <!-- <div class="menu-card">
-            <img src="img/cake/1.jpg" alt="cake">
-            <h3>Ptyś - gruszka wanilia (Szu)</h3>
-            <p>25 zł</p>
-          </div> -->
+<div class="menu-card">
+<img src="img/kawa/affogato.jpeg" alt="affogato">
+<h3>Affogato</h3>
+<p>22 zł</p>
+</div>
 
-          <div class="menu-card">
-            <img src="img/cake/shutrus.JPEG" alt="cake">
-            <h3>Ptyś - truskawka orzech laskowy (Szu)</h3>
-            <p>23 zł</p>
-          </div>
- 
+<div class="menu-card">
+<img src="img/kawa/1.jpg" alt="Espresso">
+<h3>Espresso</h3>
+<p>9 zł</p>
+</div>
 
-          <!-- <div class="menu-card">
-            <img src="img/cake/4.jpg" alt="Тірамісу">
-            <h3>Ptyś - malina kokos (Szu)</h3>
-            <p>25 zł</p>
-          </div> -->
-          <!-- <div class="menu-card">
-            <img src="img/cake/3.jpg" alt="Макарони">
-            <h3>Ptyś - mango marakija (Szu)</h3>
-            <p>25 zł</p>
-          </div> -->
-          <!-- <div class="menu-card">
-            <img src="img/cake/2.jpg" alt="Круасан">
-            <h3>Rolada bezowa - Oreo</h3>
-            <p>22 zł</p>
-          </div> -->
-          <div class="menu-card">
-            <img src="img/cake/roladabez.JPEG" alt="cake">
-            <h3>Rolada bezowa - wanilia jagoda (bezglutenowe)</h3>
-            <p>23 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cake/serncap.jpeg" alt="Маффін">
-            <h3>Sernik - Cappuccino</h3>
-            <p>23 zł</p>
-          </div>
-          <!-- <div class="menu-card">
-            <img src="img/cake/5.jpg" alt="Морозиво">
-            <h3>Sernik - Pina Colada</h3>
-            <p>24 zł</p>
-          </div> -->
-          <div class="menu-card">
-            <img src="img/cake/serniklawanda.JPEG" alt="cake">
-            <h3>Sernik - Borówka lawenda</h3>
-            <p>23 zł</p>
-          </div>
-          <!-- <div class="menu-card">
-            <img src="img/cake/5.jpg" alt="Морозиво">
-            <h3>Sernik z leśnymi jagodami</h3>
-            <p>23 zł</p>
-          </div> -->
-          <div class="menu-card">
-            <img src="img/cake/tartcyt.jpg" alt="cake">
-            <h3>Tartaletka - cytrynowy kudr, beza</h3>
-            <p>23 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cake/tartczek.jpeg" alt="cake">
-            <h3>Tartaletka - Wiśnia czekolada</h3>
-            <p>23 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cake/tiramis.JPEG" alt="cake">
-            <h3>Tiramisu (ciasto biszkoptowe)</h3>
-            <p>23 zł</p>
-          </div>
-          <div class="menu-card">
-            <img src="img/cake/tmojito.JPG" alt="cake">
-            <h3>Truskawkowe mojito (ciasto biszkoptowe)</h3>
-            <p>23 zł</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-    <!-- Контакти -->
-  <section class="contacts" id="contacts">
-    <h2>Kontakt</h2>
-    <div class="contact-grid">
-      <!-- Телефон -->
-      <div class="contact-card">
-        <div class="icon"></div>
-        <h3>Numer</h3>
-        <p><a href="tel:+48735089750">+48735089750</a></p>
-      </div>
+<div class="menu-card">
+<img src="img/kawa/2.jpg" alt="Doppio">
+<h3>Doppio</h3>
+<p>12 zł</p>
+</div>
 
-      <!-- Адреса -->
-      <div class="contact-card">
-        <div class="icon"></div>
-        <h3>Adres</h3>
-        <p>m. Warszawa,ul. Rydygiera 6 u5.1</p>
-      </div>
+<div class="menu-card">
+<img src="img/kawa/3.jpg" alt="Americano">
+<h3>Americano</h3>
+<p>12 zł</p>
+</div>
 
-      <!-- Instagram -->
-      <div class="contact-card">
-        <div class="icon"></div>
-        <h3>Instagram</h3>
-        <p><a href="https://instagram.com/brioche__cafe" target="_blank">@brioche__cafe</a></p>
-      </div>
-    </div>
-  </section>
+<div class="menu-card">
+<img src="img/kawa/4.jpg" alt="Cappuccino">
+<h3>Cappuccino</h3>
+<p>12 zł</p>
+</div>
 
+<div class="menu-card">
+<img src="img/kawa/5.jpg" alt="Flat White">
+<h3>Flat White</h3>
+<p>16 zł</p>
+</div>
 
+<div class="menu-card">
+<img src="img/kawa/6.jpg" alt="Latte">
+<h3>Latte</h3>
+<p>18 zł</p>
+</div>
 
-  <script>
-     const toggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
+<div class="menu-card">
+<img src="img/kawa/7.jpg" alt="Latte Macchiato">
+<h3>Latte Macchiato</h3>
+<p>18 zł</p>
+</div>
 
-  // Відкрити/закрити меню
-  toggle.addEventListener("click", (e) => {
-    e.stopPropagation(); // щоб клік на кнопці не тригерив "зовнішній" клік
-    navLinks.classList.toggle("active");
-  });
+<div class="menu-card">
+<img src="img/kawa/7.jpg" alt="iced latte">
+<h3>Iced Latte</h3>
+<p>18 zł</p>
+</div>
 
-  // Закриваємо меню при кліку на пункт
-  navLinks.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("active");
-    });
-  });
+<div class="menu-card">
+<img src="img/kawa/7.jpg" alt="Babyccino">
+<h3>Babyccino</h3>
+<p>16 zł</p>
+</div>
 
-  // Закриваємо меню при кліку поза ним
-  document.addEventListener("click", (e) => {
-    if (navLinks.classList.contains("active") && 
-        !navLinks.contains(e.target) && 
-        e.target !== toggle) {
-      navLinks.classList.remove("active");
-    }
-  });
+<div class="menu-card">
+<img src="img/kawa/7.jpg" alt="herbata">
+<h3>Herbata</h3>
+<p>16 zł</p>
+</div>
 
-    // Вкладки меню
-    const tabBtns = document.querySelectorAll(".tab-btn");
-    const tabContents = document.querySelectorAll(".tab-content");
+</div>
+</div>
 
-    tabBtns.forEach(btn => {
-      btn.addEventListener("click", () => {
-        tabBtns.forEach(b => b.classList.remove("active"));
-        tabContents.forEach(c => c.classList.remove("active"));
+<div class="tab-content active" id="desserts">
+<div class="card-grid">
 
-        btn.classList.add("active");
-        document.getElementById(btn.dataset.tab).classList.add("active");
-      });
-    });
+<div class="menu-card">
+<img src="img/cake/miod.JPG" alt="cake">
+<h3>Miodownik karmelowy - gruszka karmel</h3>
+<p>23 zł</p>
+</div>
 
+<div class="menu-card">
+<img src="img/cake/nappomar.jpeg" alt="cake">
+<h3>Miodownik Pomarańcza</h3>
+<p>23 zł</p>
+</div>
 
-    // Функція для прокрутки до верху
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+<div class="menu-card">
+<img src="img/cake/miodmal.jpeg" alt="cake">
+<h3>Miodownik Malina</h3>
+<p>23 zł</p>
+</div>
 
-  </script>
+<div class="menu-card">
+<img src="img/cake/napoleon.JPEG" alt="cake">
+<h3>Napoleon klasyczny</h3>
+<p>22 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cake/napchok.JPEG" alt="cake">
+<h3>Napoleon czekoladowy</h3>
+<p>23 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cake/ester.JPG" alt="cake">
+<h3>Esterhazy (bezglutenowe ciasto)</h3>
+<p>23 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cake/shutrus.JPEG" alt="cake">
+<h3>Ptyś - truskawka orzech laskowy (Szu)</h3>
+<p>23 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cake/roladabez.JPEG" alt="cake">
+<h3>Rolada bezowa - wanilia jagoda (bezglutenowe)</h3>
+<p>23 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cake/serncap.jpeg" alt="cake">
+<h3>Sernik - Cappuccino</h3>
+<p>23 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cake/serniklawanda.JPEG" alt="cake">
+<h3>Sernik - Borówka lawenda</h3>
+<p>23 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cake/tartcyt.jpg" alt="cake">
+<h3>Tartaletka - cytrynowy kudr, beza</h3>
+<p>23 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cake/tartczek.jpeg" alt="cake">
+<h3>Tartaletka - Wiśnia czekolada</h3>
+<p>23 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cake/tiramis.JPEG" alt="cake">
+<h3>Tiramisu (ciasto biszkoptowe)</h3>
+<p>23 zł</p>
+</div>
+
+<div class="menu-card">
+<img src="img/cake/tmojito.JPG" alt="cake">
+<h3>Truskawkowe mojito (ciasto biszkoptowe)</h3>
+<p>23 zł</p>
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="contacts" id="contacts">
+<h2>Kontakt</h2>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+<h3>Numer</h3>
+<p><a href="tel:+48735089750">+48735089750</a></p>
+</div>
+
+<div class="contact-card">
+<h3>Adres</h3>
+<p>m. Warszawa,ul. Rydygiera 6 u5.1</p>
+</div>
+
+<div class="contact-card">
+<h3>Instagram</h3>
+<p><a href="https://instagram.com/brioche__cafe" target="_blank">@brioche__cafe</a></p>
+</div>
+
+</div>
+</section>
+
+<script>
+const toggle=document.getElementById("menu-toggle");
+const navLinks=document.getElementById("nav-links");
+
+toggle.addEventListener("click",e=>{
+e.stopPropagation();
+navLinks.classList.toggle("active");
+});
+
+navLinks.querySelectorAll("a").forEach(link=>{
+link.addEventListener("click",()=>{
+navLinks.classList.remove("active");
+});
+});
+
+document.addEventListener("click",e=>{
+if(navLinks.classList.contains("active")&&!navLinks.contains(e.target)&&e.target!==toggle){
+navLinks.classList.remove("active");
+}
+});
+
+const tabBtns=document.querySelectorAll(".tab-btn");
+const tabContents=document.querySelectorAll(".tab-content");
+
+tabBtns.forEach(btn=>{
+btn.addEventListener("click",()=>{
+tabBtns.forEach(b=>b.classList.remove("active"));
+tabContents.forEach(c=>c.classList.remove("active"));
+btn.classList.add("active");
+document.getElementById(btn.dataset.tab).classList.add("active");
+});
+});
+
+function scrollToTop(){
+window.scrollTo({top:0,behavior:"smooth"});
+}
+   </script>
+
 </body>
 </html>
