@@ -56,6 +56,15 @@ animation: pulse 3s infinite;
   font-size: 2rem;
   cursor: pointer;
   display: none; /* сховано на десктопах */
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  line-height: 1;
+  font-family: inherit;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .nav-links {
@@ -120,7 +129,9 @@ animation: pulse 3s infinite;
 /* Адаптив */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* показуємо гамбургер */
+    display: inline-flex; /* показуємо гамбургер */
+    align-items: center;
+    justify-content: center;
   }
   .nav-links {
     position: absolute;
