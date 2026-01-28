@@ -156,7 +156,7 @@ animation: logoPulse 3s infinite;
 .hero {
   min-height: 90vh;
   width: 100%;
-  background: url("img/main/22.jpeg");
+  background: url("img/main/sala_photo.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
