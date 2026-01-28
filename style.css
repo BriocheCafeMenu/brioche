@@ -7,9 +7,47 @@
 
 body, html {
   height: 100%;
-  font-family: 'Arial', sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-text-size-adjust: 100%;
 }
-@keyframes pulse {
+
+:root {
+  --bg: #0f0f10;
+  --text: #141414;
+  --muted: rgba(20, 20, 20, 0.7);
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-strong: rgba(255, 255, 255, 0.92);
+  --border: rgba(20, 20, 20, 0.12);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.14);
+  --shadow-soft: 0 8px 18px rgba(0,0,0,0.10);
+  --maxw: 1100px;
+  --accent: #3b2e2a;
+  --accent-2: #ffcc66;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #111;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  scroll-margin-top: 92px; /* accounts for fixed navbar */
+}
+
+@keyframes logoPulse {
   0% {
     transform: scale(1);
   }
@@ -36,11 +74,14 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 30px;
+  padding: 12px 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(10, 10, 10, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
   color: #fff;
   z-index: 10;
 }
@@ -49,7 +90,7 @@ body, html {
 width: 50px;
 height: 50px;
 border-radius: 100%;
-animation: pulse 3s infinite;
+animation: logoPulse 3s infinite;
 }
 
 .menu-toggle {
@@ -78,6 +119,8 @@ animation: pulse 3s infinite;
   color: white;
   font-size:1.5rem;
   transition: color 0.3s;
+  padding: 8px 10px; /* better touch target */
+  border-radius: 10px;
 }
 
 .nav-links li a:hover {
@@ -86,43 +129,48 @@ animation: pulse 3s infinite;
 
 /* Hero секція */
 .hero {
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
   background: url("img/main/22.jpeg");
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
   position: relative;
+  padding: 110px 18px 70px; /* prevents overlap with navbar */
 }
 
 .hero::after {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: radial-gradient(1000px 500px at 50% 40%, rgba(0,0,0,0.35), rgba(0,0,0,0.70));
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
+  max-width: 720px;
 }
 
 .hero h1 {
 
-  font-size: 6rem;
+  font-size: clamp(2.6rem, 8vw, 5.5rem);
   margin-bottom: 10px;
+  letter-spacing: 0.02em;
 }
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.25rem, 3.6vw, 2.2rem);
   margin-bottom: 20px;
   font-weight: 400;
+  color: rgba(255,255,255,0.92);
 }
 
 .hero p {
-  font-size: 3rem;
+  font-size: clamp(1.05rem, 2.4vw, 1.6rem);
   font-weight: 300;
 }
 
@@ -132,18 +180,21 @@ animation: pulse 3s infinite;
     display: inline-flex; /* показуємо гамбургер */
     align-items: center;
     justify-content: center;
+    padding: 10px 12px;
+    border-radius: 12px;
   }
   .nav-links {
     position: absolute;
     top:84px;
     right: 0;
     flex-direction: column;
-    background: rgba(0,0,0,0.9);
+    background: rgba(10,10,10,0.92);
     width: 100%;
     /* height: 50vh; */
 border-radius:0 0 15px 15px;
     padding: 20px;
     display: none;
+    gap: 10px;
   }
   .nav-links.active {
     display: flex;
@@ -154,6 +205,9 @@ padding-bottom: 50px;
  .tab-btn{
   color: #fff;
  }
+  .navbar {
+    padding: 10px 14px;
+  }
 }
 
 
@@ -175,17 +229,26 @@ background: linear-gradient(90deg, rgba(193, 211, 219, 1) 0%, rgba(204, 222, 211
 /* Кнопки вкладок */
 .menu-tabs {
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: var(--maxw);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tab-btn {
-  background: none;
-  border: 2px solid #3b2e2a;
-  padding: 10px 20px;
-  margin:  10px;
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(59, 46, 42, 0.35);
+  padding: 10px 16px;
+  margin:  0;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 30px;
-  transition: all 0.3s;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  color: var(--accent);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .tab-btn.active,
@@ -203,32 +266,106 @@ background: linear-gradient(90deg, rgba(193, 211, 219, 1) 0%, rgba(204, 222, 211
   display: block;
 }
 
+/* Coffee/price list */
+.menu-list {
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+.menu-list-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.82), rgba(255,255,255,0.95));
+  border: 1px solid rgba(255,255,255,0.65);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 18px 18px;
+  overflow: hidden;
+}
+
+.menu-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 34px;
+  text-align: left;
+}
+
+.menu-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px dashed rgba(59, 46, 42, 0.22);
+}
+
+.menu-row-icon {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(59, 46, 42, 0.08);
+  border: 1px solid rgba(59, 46, 42, 0.14);
+  color: rgba(59, 46, 42, 0.90);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.menu-row-icon i {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.menu-row-name {
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: rgba(20, 20, 20, 0.92);
+}
+
+.menu-row-price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: rgba(59, 46, 42, 0.95);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.menu-note {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  color: rgba(20, 20, 20, 0.65);
+  text-align: left;
+}
+
 /* Сітка карток */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 25px;
+  max-width: var(--maxw);
+  margin: 0 auto;
 }
 .menu-card {
-  background: linear-gradient(145deg, #f4f0ef, #fefefe);
+  background: linear-gradient(145deg, rgba(255,255,255,0.88), rgba(255,255,255,0.98));
   border-radius: 18px;
   padding: 15px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255,255,255,0.65);
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .menu-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: var(--shadow);
 }
 
 .menu-card img {
   width: 100%;
-  height: 300px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 12px;
@@ -236,7 +373,7 @@ background: linear-gradient(90deg, rgba(193, 211, 219, 1) 0%, rgba(204, 222, 211
 
 /* Декоративна роздільна лінія */
 .menu-card h3 {
-  font-size: 1.9rem;
+  font-size: clamp(1.05rem, 2.6vw, 1.35rem);
   margin: 10px 0 8px;
   color: #000000;
   padding-bottom: 6px;
@@ -245,7 +382,7 @@ background: linear-gradient(90deg, rgba(193, 211, 219, 1) 0%, rgba(204, 222, 211
 }
 
 .menu-card p {
-  font-size: 1.6rem;
+  font-size: clamp(1.0rem, 2.2vw, 1.25rem);
   font-weight: bold;
   margin-top: 8px;
   color: #6b4f4f;
@@ -344,9 +481,6 @@ background: linear-gradient(90deg, rgba(193, 211, 219, 1) 0%, rgba(204, 222, 211
 }
 
 
-.hero-content p {
-    font-size: 27px;
-}
 .daysGraf {
   margin-top: 20px;
 }
@@ -354,15 +488,15 @@ background: linear-gradient(90deg, rgba(193, 211, 219, 1) 0%, rgba(204, 222, 211
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 65px;
-    height: 65px;
+    width: 62px;
+    height: 62px;
     background-color: #28a745;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: none;
     box-shadow: 0 6px 15px rgba(0,0,0,0.35);
     z-index: 9999;
@@ -382,11 +516,58 @@ background: linear-gradient(90deg, rgba(193, 211, 219, 1) 0%, rgba(204, 222, 211
     height: 100%;
     border-radius: 50%;
     background: rgba(40,167,69,0.5);
-    animation: pulse 1.8s infinite;
+    animation: ringPulse 1.8s infinite;
     z-index: -1;
 }
 
-@keyframes pulse {
+@keyframes ringPulse {
     0% { transform: scale(1); opacity: 0.8; }
     100% { transform: scale(1.6); opacity: 0; }
+}
+
+@media (max-width: 560px) {
+  .menu {
+    padding: 64px 14px;
+  }
+  .menu h2, .contacts h2 {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+  .menu-tabs {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 2px 4px 10px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  .tab-btn {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .menu-list-card {
+    padding: 14px;
+  }
+  .menu-list-grid {
+    grid-template-columns: 1fr;
+  }
+  .phone-float {
+    bottom: 14px;
+    right: 14px;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
