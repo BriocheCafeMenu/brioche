@@ -485,6 +485,81 @@ background: linear-gradient(90deg, rgba(193, 211, 219, 1) 0%, rgba(204, 222, 211
   margin-bottom: 12px;
 }
 
+/* Placeholder for cocktail cards without photo (same size as img, works on web + mobile) */
+.cocktail-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(107, 79, 79, 0.5);
+  border: 1px solid rgba(107, 79, 79, 0.12);
+}
+.cocktail-placeholder i {
+  font-size: clamp(2.25rem, 7vw, 3.25rem);
+}
+/* Mojito – fresh mint / lime */
+.cocktail-placeholder-mojito {
+  background: linear-gradient(145deg, rgba(200, 230, 200, 0.9), rgba(220, 245, 220, 0.95));
+}
+/* Lemoniada – citrus glass + lemons mixed */
+.cocktail-placeholder-lemoniada {
+  position: relative;
+  background: linear-gradient(145deg, rgba(255, 243, 205, 0.9), rgba(255, 228, 181, 0.95));
+}
+.cocktail-placeholder-lemoniada .cocktail-placeholder-lemon {
+  position: absolute;
+  font-size: clamp(1.15rem, 4vw, 1.6rem);
+  opacity: 0.85;
+  color: rgba(107, 79, 79, 0.5);
+}
+.cocktail-placeholder-lemoniada .cocktail-placeholder-lemon--left {
+  left: 18%;
+  top: 50%;
+  transform: translateY(-50%) rotate(-25deg);
+}
+.cocktail-placeholder-lemoniada .cocktail-placeholder-lemon--right {
+  right: 18%;
+  top: 50%;
+  transform: translateY(-50%) rotate(25deg);
+}
+.cocktail-placeholder-lemoniada .fa-martini-glass-citrus {
+  position: relative;
+  z-index: 1;
+}
+/* Blue curacao – light blue */
+.cocktail-placeholder-blue-curacao {
+  background: linear-gradient(145deg, rgba(205, 230, 255, 0.9), rgba(230, 240, 255, 0.95));
+}
+/* Aperol Spritz – orange / aperol */
+.cocktail-placeholder-aperol {
+  background: linear-gradient(145deg, rgba(255, 220, 180, 0.9), rgba(255, 200, 150, 0.95));
+}
+/* Milk shake – creamy */
+.cocktail-placeholder-milkshake {
+  background: linear-gradient(145deg, rgba(255, 248, 240, 0.95), rgba(255, 240, 225, 0.98));
+}
+/* Capuorange – coffee + orange (mug + orange citrus) */
+.cocktail-placeholder-capuorange {
+  position: relative;
+  background: linear-gradient(145deg, rgba(255, 235, 210, 0.9), rgba(245, 220, 190, 0.95));
+}
+.cocktail-placeholder-capuorange .cocktail-placeholder-capuorange-mug {
+  position: relative;
+  z-index: 1;
+}
+.cocktail-placeholder-capuorange .cocktail-placeholder-capuorange-orange {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%) rotate(15deg);
+  font-size: clamp(1.2rem, 4vw, 1.75rem);
+  color: #c9761e;
+  opacity: 0.9;
+}
+
 /* Декоративна роздільна лінія */
 .menu-card h3 {
   font-size: clamp(1.05rem, 2.6vw, 1.35rem);
