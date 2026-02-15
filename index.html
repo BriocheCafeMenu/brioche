@@ -518,18 +518,8 @@
 
 <footer class="footer" role="contentinfo">
     <div class="footer-inner">
-        <div class="footer-brand">
-            <p class="footer-title">Adres</p>
-            <p class="footer-subtitle"><a
-                    href="https://www.google.com/maps/dir/?api=1&destination=Brioche+cafe,+Ludwika+Rydygiera+U5.1,+01-793+Warszawa"
-                    target="_blank" rel="noopener noreferrer" aria-label="Otwórz trasę do Brioche Cafe w Google Maps"
-                    class="footer-address-link">Ludwika Rydygiera U5.1, 01-793 Warszawa</a></p>
-        </div>
-        <div class="footer-links" aria-label="Linki">
-            <a href="tel:+48735089750"><i class="fa-solid fa-phone" aria-hidden="true"></i> +48 735 089 750</a>
-            <a href="https://instagram.com/brioche__cafe" target="_blank" rel="noopener noreferrer"><i
-                    class="fa-brands fa-instagram" aria-hidden="true"></i> @brioche__cafe</a>
-        </div>
+        <p class="footer-text">Brioche Cafe · Kawiarnia w Warszawie</p>
+        <a href="#contacts" class="footer-link">Kontakt</a>
     </div>
 </footer>
 
@@ -656,6 +646,38 @@
         }
 
         window.scrollToTop = scrollToTop;
+
+        // GA4: track clicks on Instagram, phone, address (Maps)
+        document.addEventListener("click", function (e) {
+            const link = e.target.closest("a");
+            if (!link || !link.href) return;
+            const href = link.href;
+            if (href.startsWith("tel:")) {
+                if (typeof gtag === "function") {
+                    gtag("event", "click", {
+                        event_category: "contact",
+                        event_label: "phone",
+                        transport_type: "beacon"
+                    });
+                }
+            } else if (href.indexOf("instagram.com") !== -1) {
+                if (typeof gtag === "function") {
+                    gtag("event", "click", {
+                        event_category: "outbound",
+                        event_label: "instagram",
+                        transport_type: "beacon"
+                    });
+                }
+            } else if (href.indexOf("google.com/maps") !== -1) {
+                if (typeof gtag === "function") {
+                    gtag("event", "click", {
+                        event_category: "contact",
+                        event_label: "address_maps",
+                        transport_type: "beacon"
+                    });
+                }
+            }
+        });
     })();
 </script>
 
