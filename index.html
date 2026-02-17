@@ -34,6 +34,7 @@
     <meta property="og:description"
           content="Świeże desery, kawa, briosz i koktajle w sercu Warszawy. Otwarte od poniedziałku do niedzieli.">
     <meta property="og:url" content="https://briochecafe.pl">
+    <meta property="og:image" content="https://briochecafe.pl/img/main/bbbb.jpg">
     <meta property="og:site_name" content="Brioche Cafe">
     <meta property="og:locale" content="pl_PL">
     <meta property="restaurant:contact_info:street_address" content="ul. Rydygiera 6 u5.1">
@@ -44,10 +45,15 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Brioche Cafe - Kawiarnia w Warszawie">
     <meta name="twitter:description" content="Świeże desery, kawa, briosz i koktajle w sercu Warszawy.">
+    <meta name="twitter:image" content="https://briochecafe.pl/img/main/bbbb.jpg">
 
     <title>Brioche Cafe - Kawiarnia w Warszawie | Desery, Kawa, Briosz</title>
 
     <link rel="canonical" href="https://briochecafe.pl">
+    <meta name="theme-color" content="#2d231c">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -133,13 +139,15 @@
 
 <section class="hero" aria-labelledby="hero-heading">
     <div class="hero-content">
-        <h1 id="hero-heading">Brioche cafe</h1>
+        <h1 id="hero-heading">Brioche Cafe</h1>
         <h2>Czas na kawę</h2>
-        <p class="daysGraf">Pon - Piąt:</p>
-        <p>09:00 - 19:00</p>
-        <p class="daysGraf">Sobota, Niedziela:</p>
-        <p>10:00 - 19:00</p>
-        <p class="daysGraf">Wtorek Nieczynne</p>
+        <div class="hero-hours">
+            <p class="daysGraf">Pon – Pt:</p>
+            <p>09:00 – 19:00</p>
+            <p class="daysGraf">Sobota, Niedziela:</p>
+            <p>10:00 – 19:00</p>
+            <p class="daysGraf">Wtorek: nieczynne</p>
+        </div>
         <div class="hero-actions" aria-label="Szybkie akcje">
             <a class="btn btn-primary" href="#menu"><i class="fa-solid fa-utensils" aria-hidden="true"></i> Menu</a>
             <a class="btn btn-ghost" href="tel:+48735089750"><i class="fa-solid fa-phone" aria-hidden="true"></i>
@@ -155,6 +163,7 @@
 
 <section class="menu" id="menu" aria-labelledby="menu-heading">
     <h2 id="menu-heading">Menu</h2>
+    <p class="menu-subtitle">Świeże desery, kawa, briosz i koktajle — wybierz kategorię poniżej.</p>
 
     <div class="menu-tabs" role="tablist" aria-label="Kategorie menu">
         <button class="tab-btn active" id="desserts-tab" data-tab="desserts" role="tab" aria-selected="true"
@@ -183,46 +192,46 @@
                     <img src="img/briosz/karmeljabl.jpeg" alt="Briosz z karmelizowanym jabłkiem" width="300"
                          height="300" loading="lazy">
                     <h3>Briosz - Karmelizowane Jabłko</h3>
-                    <p>16 zł</p>
+                    <p class="menu-card-price">16 zł</p>
                 </div>
                 <div class="menu-card">
                     <img src="img/briosz/krembud.jpeg" alt="Briosz z kremem budyniowym i truskawką" width="300"
                          height="300" loading="lazy">
                     <h3>Briosz - Krem budyniowy, truskawka</h3>
-                    <p>16 zł</p>
+                    <p class="menu-card-price">16 zł</p>
                 </div>
                 <div class="menu-card">
                     <img src="img/briosz/snickersb.jpeg" alt="Briosz Snickers" width="300" height="300" loading="lazy">
                     <h3>Briosz - Snickers</h3>
-                    <p>16 zł</p>
+                    <p class="menu-card-price">16 zł</p>
                 </div>
                 <div class="menu-card">
                     <img src="img/briosz/malinczekol.jpeg" alt="Briosz z maliną i czekoladą" width="300" height="300"
                          loading="lazy">
                     <h3>Briosz - Malina, czekolada</h3>
-                    <p>16 zł</p>
+                    <p class="menu-card-price">16 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/briosz/zmakiem.jpeg" alt="Briosz z makiem" width="300" height="300" loading="lazy">
                     <h3>Briosz - Z Makiem</h3>
-                    <p>16 zł</p>
+                    <p class="menu-card-price">16 zł</p>
                 </div>
                 <div class="menu-card">
                     <img src="img/briosz/lotus.jpeg" alt="Briosz Lotus" width="300" height="300" loading="lazy">
                     <h3>Briosz - Lotus</h3>
-                    <p>16 zł</p>
+                    <p class="menu-card-price">16 zł</p>
                 </div>
                 <div class="menu-card">
                     <img src="img/briosz/krembud.jpeg" alt="Briosz Kit-Kat" width="300" height="300" loading="lazy">
                     <h3>Briosz - Kit-Kat</h3>
-                    <p>16 zł</p>
+                    <p class="menu-card-price">16 zł</p>
                 </div>
                 <div class="menu-card">
                     <img src="img/briosz/krembud.jpeg" alt="Briosz z wiśnią i pistacją" width="300" height="300"
                          loading="lazy">
                     <h3>Briosz - Wiśnia, pistacja</h3>
-                    <p>16 zł</p>
+                    <p class="menu-card-price">16 zł</p>
                 </div>
 
             </div>
@@ -234,50 +243,50 @@
                 <div class="menu-card">
                     <img src="img/cocktails/grzane_wino.jpeg" alt="Grzane wino" width="300" height="300" loading="lazy">
                     <h3>Grzane wino 18+</h3>
-                    <p>22 zł</p>
+                    <p class="menu-card-price">22 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cocktails/Soksw.jpeg" alt="Świeżo wyciskany sok" width="300" height="300"
                          loading="lazy">
                     <h3>Sok - świeżo wyciskany</h3>
-                    <p>21 zł</p>
+                    <p class="menu-card-price">21 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <div class="cocktail-placeholder cocktail-placeholder-mojito" aria-hidden="true"><i class="fa-solid fa-martini-glass"></i></div>
                     <h3>Mojito</h3>
-                    <p>22 zł</p>
+                    <p class="menu-card-price">22 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <div class="cocktail-placeholder cocktail-placeholder-lemoniada" aria-hidden="true"><i class="fa-solid fa-lemon cocktail-placeholder-lemon cocktail-placeholder-lemon--left"></i><i class="fa-solid fa-martini-glass-citrus"></i><i class="fa-solid fa-lemon cocktail-placeholder-lemon cocktail-placeholder-lemon--right"></i></div>
                     <h3>Lemoniada - Broskwinia Pomarańcza</h3>
-                    <p>18 zł</p>
+                    <p class="menu-card-price">18 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <div class="cocktail-placeholder cocktail-placeholder-blue-curacao" aria-hidden="true"><i class="fa-solid fa-wine-glass"></i></div>
                     <h3>Blue curacao</h3>
-                    <p>19 zł</p>
+                    <p class="menu-card-price">19 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <div class="cocktail-placeholder cocktail-placeholder-aperol" aria-hidden="true"><i class="fa-solid fa-champagne-glasses"></i></div>
                     <h3>Aperol Spritz (bezalkoholowy)</h3>
-                    <p>30 zł</p>
+                    <p class="menu-card-price">30 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <div class="cocktail-placeholder cocktail-placeholder-milkshake" aria-hidden="true"><i class="fa-solid fa-blender"></i></div>
                     <h3>Milk shake</h3>
-                    <p>19 zł</p>
+                    <p class="menu-card-price">19 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <div class="cocktail-placeholder cocktail-placeholder-capuorange" aria-hidden="true"><i class="fa-solid fa-mug-saucer cocktail-placeholder-capuorange-mug"></i><i class="fa-solid fa-lemon cocktail-placeholder-capuorange-orange" aria-hidden="true"></i></div>
                     <h3>Capuorange</h3>
-                    <p>22 zł</p>
+                    <p class="menu-card-price">22 zł</p>
                 </div>
 
             </div>
@@ -290,27 +299,27 @@
                     <img src="img/lunch/serniki.JPG" alt="Syrniki z sosem i śmietaną" width="300" height="300"
                          loading="lazy">
                     <h3>Syrniki z sosem i śmietaną</h3>
-                    <p>32 zł</p>
+                    <p class="menu-card-price">32 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/lunch/szakszuka.jpeg" alt="Szakszuka" width="300" height="300" loading="lazy">
                     <h3>Szakszuka</h3>
-                    <p>34 zł</p>
+                    <p class="menu-card-price">34 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/lunch/sniad wiej.jpeg" alt="Śniadanie wiejskie" width="300" height="300"
                          loading="lazy">
                     <h3>Śniadanie Wiejskie</h3>
-                    <p>34 zł</p>
+                    <p class="menu-card-price">34 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/lunch/tost.jpeg" alt="Sałatka z burratą i prosciutto" width="300" height="300"
                          loading="lazy">
                     <h3>Sałatka z burratą i prosciutto</h3>
-                    <p>35 zł</p>
+                    <p class="menu-card-price">35 zł</p>
                 </div>
 
             </div>
@@ -389,94 +398,94 @@
                     <img src="img/cake/miod.JPG" alt="Miodownik karmelowy z gruszką i karmelem" width="300" height="300"
                          loading="lazy">
                     <h3>Miodownik karmelowy - gruszka karmel</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/nappomar.jpeg" alt="Miodownik z pomarańczą" width="300" height="300"
                          loading="lazy">
                     <h3>Miodownik Pomarańcza</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/miodmal.jpeg" alt="Miodownik z maliną" width="300" height="300" loading="lazy">
                     <h3>Miodownik Malina</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/napoleon.JPEG" alt="Napoleon klasyczny" width="300" height="300" loading="lazy">
                     <h3>Napoleon klasyczny</h3>
-                    <p>22 zł</p>
+                    <p class="menu-card-price">22 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/napchok.JPEG" alt="Napoleon czekoladowy" width="300" height="300" loading="lazy">
                     <h3>Napoleon czekoladowy</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/ester.JPG" alt="Esterhazy bezglutenowe ciasto" width="300" height="300"
                          loading="lazy">
                     <h3>Esterhazy (bezglutenowe ciasto)</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/shutrus.JPEG" alt="Ptyś z truskawką i orzechem laskowym" width="300" height="300"
                          loading="lazy">
                     <h3>Ptyś - truskawka orzech laskowy (Szu)</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/roladabez.JPEG" alt="Rolada bezowa z wanilią i jagodą bezglutenowa" width="300"
                          height="300" loading="lazy">
                     <h3>Rolada bezowa - wanilia jagoda (bezglutenowe)</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/serncap.jpeg" alt="Sernik Cappuccino" width="300" height="300" loading="lazy">
                     <h3>Sernik - Cappuccino</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/serniklawanda.JPEG" alt="Sernik z borówką i lawendą" width="300" height="300"
                          loading="lazy">
                     <h3>Sernik - Borówka lawenda</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/tartcyt.jpg" alt="Tartaletka cytrynowa z kudrem i bezą" width="300" height="300"
                          loading="lazy">
                     <h3>Tartaletka - cytrynowy kudr, beza</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/tartczek.jpeg" alt="Tartaletka z wiśnią i czekoladą" width="300" height="300"
                          loading="lazy">
                     <h3>Tartaletka - Wiśnia czekolada</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/tiramis.JPEG" alt="Tiramisu ciasto biszkoptowe" width="300" height="300"
                          loading="lazy">
                     <h3>Tiramisu (ciasto biszkoptowe)</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
                 <div class="menu-card">
                     <img src="img/cake/tmojito.JPG" alt="Truskawkowe mojito ciasto biszkoptowe" width="300" height="300"
                          loading="lazy">
                     <h3>Truskawkowe mojito (ciasto biszkoptowe)</h3>
-                    <p>23 zł</p>
+                    <p class="menu-card-price">23 zł</p>
                 </div>
 
             </div>
@@ -487,6 +496,7 @@
 
 <section class="contacts" id="contacts" aria-labelledby="contacts-heading">
     <h2 id="contacts-heading">Kontakt</h2>
+    <p class="contacts-subtitle">Odwiedź nas lub napisz — chętnie odpowiemy.</p>
 
     <div class="contact-grid">
 
