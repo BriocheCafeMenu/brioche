@@ -1,4 +1,16 @@
+# Brioche Cafe - robots.txt
+# https://briochecafe.pl
+
 User-agent: *
 Allow: /
+Allow: /img/
 
+# Disallow development/system files
+Disallow: /.git/
+Disallow: /.idea/
+
+# Sitemap location
 Sitemap: https://briochecafe.pl/sitemap.xml
+
+# Crawl-delay for polite crawling (optional, respected by some bots)
+# Crawl-delay: 1
