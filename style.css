@@ -671,6 +671,26 @@ button {
     scroll-margin-top: var(--nav-height);
 }
 
+.menu-loading {
+    text-align: center;
+    padding: var(--space-4xl) 0;
+    color: var(--color-text-muted);
+}
+
+.menu-loading__spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: menuSpin 0.8s linear infinite;
+    margin: 0 auto var(--space-lg);
+}
+
+@keyframes menuSpin {
+    to { transform: rotate(360deg); }
+}
+
 .menu-tabs {
     display: flex;
     flex-wrap: wrap;
