@@ -1,0 +1,402 @@
+{
+  "version": 1,
+  "updatedAt": "2026-02-22T00:00:00Z",
+  "categories": [
+    {
+      "id": "desserts",
+      "label": "Desery",
+      "icon": "fa-cake-candles",
+      "type": "cards",
+      "gridClass": "menu-grid",
+      "items": [
+        {
+          "id": "desserts-1",
+          "title": "Miodownik karmelowy",
+          "description": "gruszka, karmel",
+          "price": "23 zl",
+          "image": "images/desserts/miod.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 0
+        },
+        {
+          "id": "desserts-2",
+          "title": "Miodownik Pomarańcza",
+          "description": "pomarańcza, miod",
+          "price": "23 zl",
+          "image": "images/desserts/nappomar.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 1
+        },
+        {
+          "id": "desserts-3",
+          "title": "Miodownik Malina",
+          "description": "malina, miod",
+          "price": "23 zl",
+          "image": "images/desserts/miodmal.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 2
+        },
+        {
+          "id": "desserts-4",
+          "title": "Napoleon klasyczny",
+          "description": "ciasto francuskie, krem",
+          "price": "22 zl",
+          "image": "images/desserts/napoleon.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 3
+        },
+        {
+          "id": "desserts-5",
+          "title": "Napoleon czekoladowy",
+          "description": "czekolada, krem",
+          "price": "23 zl",
+          "image": "images/desserts/napchok.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 4
+        },
+        {
+          "id": "desserts-6",
+          "title": "Esterhazy",
+          "description": "bezglutenowe ciasto",
+          "price": "23 zl",
+          "image": "images/desserts/ester.webp",
+          "badge": "Bezglutenowe",
+          "placeholder": null,
+          "order": 5
+        },
+        {
+          "id": "desserts-7",
+          "title": "Ptys (Szu)",
+          "description": "truskawka, orzech laskowy",
+          "price": "23 zl",
+          "image": "images/desserts/shutrus.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 6
+        },
+        {
+          "id": "desserts-8",
+          "title": "Rolada bezowa",
+          "description": "wanilia, jagoda",
+          "price": "23 zl",
+          "image": "images/desserts/roladabez.webp",
+          "badge": "Bezglutenowe",
+          "placeholder": null,
+          "order": 7
+        },
+        {
+          "id": "desserts-9",
+          "title": "Sernik Cappuccino",
+          "description": "kawa, ser",
+          "price": "23 zl",
+          "image": "images/desserts/serncap.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 8
+        },
+        {
+          "id": "desserts-10",
+          "title": "Sernik Lawenda",
+          "description": "borówka, lawenda",
+          "price": "23 zl",
+          "image": "images/desserts/serniklawanda.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 9
+        },
+        {
+          "id": "desserts-11",
+          "title": "Tartaletka cytrynowa",
+          "description": "cytrynowy kurd, beza",
+          "price": "23 zl",
+          "image": "images/desserts/tartcyt.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 10
+        },
+        {
+          "id": "desserts-12",
+          "title": "Tartaletka wisniowa",
+          "description": "wiśnia, czekolada",
+          "price": "23 zl",
+          "image": "images/desserts/tartczek.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 11
+        },
+        {
+          "id": "desserts-13",
+          "title": "Tiramisu",
+          "description": "ciasto biszkoptowe",
+          "price": "23 zl",
+          "image": "images/desserts/tiramis.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 12
+        },
+        {
+          "id": "desserts-14",
+          "title": "Truskawkowe mojito",
+          "description": "ciasto biszkoptowe",
+          "price": "23 zl",
+          "image": "images/desserts/tmojito.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 13
+        }
+      ]
+    },
+    {
+      "id": "briosz",
+      "label": "Briosz",
+      "icon": "fa-bread-slice",
+      "type": "cards",
+      "gridClass": "menu-grid",
+      "items": [
+        {
+          "id": "briosz-1",
+          "title": "Karmelizowane Jabłko",
+          "description": "jabłko, karmel",
+          "price": "16 zl",
+          "image": "images/briosz/karmeljabl.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 0
+        },
+        {
+          "id": "briosz-2",
+          "title": "Krem budyniowy",
+          "description": "budyn, truskawka",
+          "price": "16 zl",
+          "image": "images/briosz/krembud.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 1
+        },
+        {
+          "id": "briosz-3",
+          "title": "Snickers",
+          "description": "orzeszki, karmel, czekolada",
+          "price": "16 zl",
+          "image": "images/briosz/snickersb.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 2
+        },
+        {
+          "id": "briosz-4",
+          "title": "Malina & Czekolada",
+          "description": "malina, czekolada",
+          "price": "16 zl",
+          "image": "images/briosz/malinczekol.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 3
+        },
+        {
+          "id": "briosz-5",
+          "title": "Z Makiem",
+          "description": "mak, wanilia",
+          "price": "16 zl",
+          "image": "images/briosz/zmakiem.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 4
+        },
+        {
+          "id": "briosz-6",
+          "title": "Lotus",
+          "description": "ciasteczka lotus, krem",
+          "price": "16 zl",
+          "image": "images/briosz/lotus.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 5
+        },
+        {
+          "id": "briosz-7",
+          "title": "Kit-Kat",
+          "description": "kit-kat, czekolada",
+          "price": "16 zl",
+          "image": "images/briosz/krembud.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 6
+        },
+        {
+          "id": "briosz-8",
+          "title": "Wiśnia & Pistacja",
+          "description": "wiśnia, pistacja",
+          "price": "16 zl",
+          "image": "images/briosz/krembud.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "coffee",
+      "label": "Kawa",
+      "icon": "fa-mug-hot",
+      "type": "coffee",
+      "gridClass": null,
+      "items": [
+        { "id": "coffee-1", "title": "Espresso", "price": "9 zl", "order": 0 },
+        { "id": "coffee-2", "title": "Doppio", "price": "12 zl", "order": 1 },
+        { "id": "coffee-3", "title": "Americano", "price": "12 zl", "order": 2 },
+        { "id": "coffee-4", "title": "Cappuccino", "price": "12 zl", "order": 3 },
+        { "id": "coffee-5", "title": "Flat White", "price": "16 zl", "order": 4 },
+        { "id": "coffee-6", "title": "Latte", "price": "18 zl", "order": 5 },
+        { "id": "coffee-7", "title": "Latte Macchiato", "price": "18 zl", "order": 6 },
+        { "id": "coffee-8", "title": "Iced Latte", "price": "18 zl", "order": 7 },
+        { "id": "coffee-9", "title": "Affogato", "price": "22 zl", "order": 8 },
+        { "id": "coffee-10", "title": "Babyccino", "price": "16 zl", "order": 9 },
+        { "id": "coffee-11", "title": "Herbata", "price": "16 zl", "order": 10 }
+      ]
+    },
+    {
+      "id": "cocktails",
+      "label": "Koktajle",
+      "icon": "fa-martini-glass-citrus",
+      "type": "cards",
+      "gridClass": "menu-grid",
+      "items": [
+        {
+          "id": "cocktails-1",
+          "title": "Grzane wino",
+          "description": "wino, przyprawy",
+          "price": "22 zl",
+          "image": "images/cocktails/grzane_wino.webp",
+          "badge": "18+",
+          "placeholder": null,
+          "order": 0
+        },
+        {
+          "id": "cocktails-2",
+          "title": "Sok świeży",
+          "description": "świeżo wyciskany",
+          "price": "21 zl",
+          "image": "images/cocktails/soksw.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 1
+        },
+        {
+          "id": "cocktails-3",
+          "title": "Mojito",
+          "description": "mięta, limonka",
+          "price": "22 zl",
+          "image": null,
+          "badge": null,
+          "placeholder": { "icon": "fa-martini-glass", "gradientClass": "menu-card__image--mojito" },
+          "order": 2
+        },
+        {
+          "id": "cocktails-4",
+          "title": "Lemoniada",
+          "description": "brzoskwinia, pomarańcza",
+          "price": "18 zl",
+          "image": null,
+          "badge": null,
+          "placeholder": { "icon": "fa-lemon", "gradientClass": "menu-card__image--lemonade" },
+          "order": 3
+        },
+        {
+          "id": "cocktails-5",
+          "title": "Blue Curacao",
+          "description": "curacao, soda",
+          "price": "19 zl",
+          "image": null,
+          "badge": null,
+          "placeholder": { "icon": "fa-wine-glass", "gradientClass": "menu-card__image--blue" },
+          "order": 4
+        },
+        {
+          "id": "cocktails-6",
+          "title": "Aperol Spritz",
+          "description": "bezalkoholowy",
+          "price": "30 zl",
+          "image": null,
+          "badge": "0%",
+          "placeholder": { "icon": "fa-champagne-glasses", "gradientClass": "menu-card__image--aperol" },
+          "order": 5
+        },
+        {
+          "id": "cocktails-7",
+          "title": "Milkshake",
+          "description": "mleko, lody",
+          "price": "19 zl",
+          "image": null,
+          "badge": null,
+          "placeholder": { "icon": "fa-blender", "gradientClass": "menu-card__image--milkshake" },
+          "order": 6
+        },
+        {
+          "id": "cocktails-8",
+          "title": "Capuorange",
+          "description": "cappuccino, pomarańcza",
+          "price": "22 zl",
+          "image": null,
+          "badge": null,
+          "placeholder": { "icon": "fa-mug-saucer", "gradientClass": "menu-card__image--orange" },
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "lunch",
+      "label": "Śniadanie",
+      "icon": "fa-egg",
+      "type": "cards-large",
+      "gridClass": "menu-grid menu-grid--large",
+      "items": [
+        {
+          "id": "lunch-1",
+          "title": "Syrniki",
+          "description": "z sosem i śmiętaną",
+          "price": "32 zl",
+          "image": "images/lunch/serniki.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 0
+        },
+        {
+          "id": "lunch-2",
+          "title": "Szakszuka",
+          "description": "jajka, pomidory, papryka",
+          "price": "34 zl",
+          "image": "images/lunch/szakszuka.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 1
+        },
+        {
+          "id": "lunch-3",
+          "title": "Śniadanie Wiejskie",
+          "description": "jajka, boczek, kiełbasa",
+          "price": "34 zl",
+          "image": "images/lunch/sniad_wiej.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 2
+        },
+        {
+          "id": "lunch-4",
+          "title": "Sałatka z Burrata",
+          "description": "burrata, prosciutto",
+          "price": "35 zl",
+          "image": "images/lunch/tost.webp",
+          "badge": null,
+          "placeholder": null,
+          "order": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+# Brioche Cafe
+
+> Przytulna kawiarnia w Warszawie serwująca domowe desery, aromatyczną kawę, autorskie briosze i koktajle.
+
+## Informacje
+
+- Nazwa: Brioche Cafe
+- Adres: ul. Ludwika Rydygiera 6 U5.1, 01-793 Warszawa, Polska
+- Telefon: +48 735 089 750
+- Strona: https://briochecafe.pl
+- Instagram: https://www.instagram.com/brioche_cafe_warsaw
+
+## Godziny otwarcia
+
+- Poniedziałek: 09:00–20:00
+- Wtorek: Zamknięte
+- Środa: 09:00–20:00
+- Czwartek: 09:00–20:00
+- Piątek: 09:00–20:00
+- Sobota: 09:00–20:00
+- Niedziela: 10:00–20:00
+
+## Menu
+
+### Desery
+Domowe desery: miodownik, napoleon, esterhazy, tiramisu, serniki, tartaletki i inne. Ceny: 22–23 zł.
+
+### Briosze
+Autorskie briosze: karmelizowane jabłko, krem budyniowy, snickers, malina z czekoladą, mak, lotus, kit-kat, wiśnia z pistacją. Cena: 16 zł.
+
+### Kawa
+Espresso, doppio, americano, cappuccino, flat white, latte, iced latte, affogato, babyccino, herbata. Ceny: 9–22 zł.
+
+### Koktajle
+Grzaniec, świeży sok, mojito, lemoniada, blue curacao, aperol spritz (bezalkoholowy), milkshake, capuorange. Ceny: 18–30 zł.
+
+### Śniadania
+Syrniki, shakshuka, śniadanie wiejskie, sałatka z burratą. Ceny: 32–35 zł.
