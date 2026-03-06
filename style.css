@@ -1208,6 +1208,22 @@ button {
     color: var(--color-text-light);
 }
 
+.footer__credit {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin-top: var(--space-xs);
+}
+
+.footer__credit a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.footer__credit a:hover {
+    text-decoration: underline;
+}
+
 /* ============================================
    REVEAL ANIMATIONS
    ============================================ */
