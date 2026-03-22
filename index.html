@@ -523,6 +523,20 @@
     </div>
 </footer>
 
+<div class="menu-modal" id="menu-modal" hidden>
+    <div class="menu-modal__backdrop"></div>
+    <div class="menu-modal__dialog" role="dialog" aria-modal="true" aria-label="Szczegóły produktu">
+        <button class="menu-modal__close" aria-label="Zamknij">&times;</button>
+        <div class="menu-modal__image" id="menu-modal-image"></div>
+        <div class="menu-modal__body">
+            <h3 class="menu-modal__title" id="menu-modal-title"></h3>
+            <p class="menu-modal__desc" id="menu-modal-desc"></p>
+            <p class="menu-modal__details" id="menu-modal-details"></p>
+            <span class="menu-modal__price" id="menu-modal-price"></span>
+        </div>
+    </div>
+</div>
+
 <script>
 (function() {
     'use strict';
@@ -653,7 +667,7 @@
     initReveal();
 
     // --- Dynamic Menu Loading ---
-    var MENU_JSON_URL = 'https://pub-733a0bfd4fd04361b6004202ed60a411.r2.dev/menu.json';
+    var MENU_JSON_URL = CDN_BASE + 'menu.json';
     var CDN_BASE = 'https://pub-733a0bfd4fd04361b6004202ed60a411.r2.dev/';
 
     function escHtml(str) {
@@ -663,6 +677,8 @@
         return d.innerHTML;
     }
 
+    var menuItemsMap = {};
+
     function renderCardsPanel(cat) {
         var gridClass = cat.gridClass || 'menu-grid';
         var isLarge = cat.type === 'cards-large';
@@ -670,8 +686,9 @@
         var html = '<div class="' + gridClass + '">';
 
         sorted.forEach(function(item) {
+            menuItemsMap[item.id] = item;
             var cardClass = isLarge ? 'menu-card menu-card--large' : 'menu-card';
-            html += '<article class="' + cardClass + '">';
+            html += '<article class="' + cardClass + '" data-item-id="' + escHtml(item.id) + '" role="button" tabindex="0">';
 
             if (item.image) {
                 html += '<div class="menu-card__image">';
@@ -689,7 +706,9 @@
             html += '<h3 class="menu-card__title">' + escHtml(item.title) + '</h3>';
             if (item.description) html += '<p class="menu-card__desc">' + escHtml(item.description) + '</p>';
             html += '<span class="menu-card__price">' + escHtml(item.price) + '</span>';
-            html += '</div></article>';
+            html += '</div>';
+
+            html += '</article>';
         });
 
         html += '</div>';
@@ -747,6 +766,80 @@
         // Init reveal animations for dynamically loaded cards
         initReveal(container);
     }
+
+    // Menu modal
+    var menuModal = document.getElementById('menu-modal');
+    var menuModalImage = document.getElementById('menu-modal-image');
+    var menuModalTitle = document.getElementById('menu-modal-title');
+    var menuModalDesc = document.getElementById('menu-modal-desc');
+    var menuModalDetails = document.getElementById('menu-modal-details');
+    var menuModalPrice = document.getElementById('menu-modal-price');
+    var menuModalClose = menuModal.querySelector('.menu-modal__close');
+    var menuModalBackdrop = menuModal.querySelector('.menu-modal__backdrop');
+
+    function openMenuModal(item) {
+        menuModalTitle.textContent = item.title || '';
+        menuModalDesc.textContent = item.description || '';
+        menuModalDesc.style.display = item.description ? '' : 'none';
+        menuModalDetails.textContent = item.details || '';
+        menuModalDetails.style.display = item.details ? '' : 'none';
+        menuModalPrice.textContent = item.price || '';
+
+        if (item.image) {
+            menuModalImage.className = 'menu-modal__image';
+            menuModalImage.innerHTML = '<img src="' + CDN_BASE + item.image + '" alt="' + escHtml(item.title) + '">';
+        } else if (item.placeholder) {
+            menuModalImage.className = 'menu-modal__image menu-modal__image--placeholder';
+            menuModalImage.innerHTML = '<i class="fa-solid ' + item.placeholder.icon + '" aria-hidden="true"></i>';
+        } else {
+            menuModalImage.className = 'menu-modal__image menu-modal__image--placeholder';
+            menuModalImage.innerHTML = '<i class="fa-solid fa-utensils" aria-hidden="true"></i>';
+        }
+
+        menuModal.removeAttribute('hidden');
+        document.body.style.overflow = 'hidden';
+        menuModalClose.focus();
+    }
+
+    function closeMenuModal() {
+        if (menuModal.hasAttribute('hidden')) return;
+        menuModal.classList.add('menu-modal--closing');
+        menuModal.addEventListener('animationend', function handler() {
+            menuModal.removeEventListener('animationend', handler);
+            menuModal.classList.remove('menu-modal--closing');
+            menuModal.setAttribute('hidden', '');
+            document.body.style.overflow = '';
+        });
+    }
+
+    menuModalClose.addEventListener('click', closeMenuModal);
+    menuModalBackdrop.addEventListener('click', closeMenuModal);
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !menuModal.hasAttribute('hidden')) {
+            closeMenuModal();
+        }
+    });
+
+    // Card click → open modal (event delegation)
+    document.getElementById('menu-content').addEventListener('click', function(e) {
+        var card = e.target.closest('.menu-card');
+        if (!card) return;
+        var itemId = card.getAttribute('data-item-id');
+        if (itemId && menuItemsMap[itemId]) {
+            openMenuModal(menuItemsMap[itemId]);
+        }
+    });
+
+    document.getElementById('menu-content').addEventListener('keydown', function(e) {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        var card = e.target.closest('.menu-card');
+        if (!card) return;
+        e.preventDefault();
+        var itemId = card.getAttribute('data-item-id');
+        if (itemId && menuItemsMap[itemId]) {
+            openMenuModal(menuItemsMap[itemId]);
+        }
+    });
 
     fetch(MENU_JSON_URL)
         .then(function(res) {
