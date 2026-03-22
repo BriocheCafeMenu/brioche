@@ -667,8 +667,8 @@
     initReveal();
 
     // --- Dynamic Menu Loading ---
-    var MENU_JSON_URL = CDN_BASE + 'menu.json';
     var CDN_BASE = 'https://pub-733a0bfd4fd04361b6004202ed60a411.r2.dev/';
+    var MENU_JSON_URL = CDN_BASE + 'menu.json';
 
     function escHtml(str) {
         if (!str) return '';
@@ -779,10 +779,10 @@
 
     function openMenuModal(item) {
         menuModalTitle.textContent = item.title || '';
-        menuModalDesc.textContent = item.description || '';
-        menuModalDesc.style.display = item.description ? '' : 'none';
-        menuModalDetails.textContent = item.details || '';
-        menuModalDetails.style.display = item.details ? '' : 'none';
+        var modalText = item.details || item.description || '';
+        menuModalDesc.textContent = modalText;
+        menuModalDesc.style.display = modalText ? '' : 'none';
+        menuModalDetails.style.display = 'none';
         menuModalPrice.textContent = item.price || '';
 
         if (item.image) {
