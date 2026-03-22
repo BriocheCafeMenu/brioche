@@ -724,6 +724,10 @@ button {
     border-color: var(--color-bg-dark);
 }
 
+.menu-tab--hidden {
+    display: none;
+}
+
 .menu-tab i {
     font-size: 1rem;
 }
