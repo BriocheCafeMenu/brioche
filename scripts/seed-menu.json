@@ -17,7 +17,6 @@
           "image": "images/desserts/miod.webp",
           "badge": null,
           "placeholder": null,
-          "details": "Warstwy: miodowe ciasto, krem karmelowy, kompot gruszkowy",
           "order": 0
         },
         {
@@ -28,7 +27,6 @@
           "image": "images/desserts/nappomar.webp",
           "badge": null,
           "placeholder": null,
-          "details": "Warstwy: miodowe ciasto, krem pomarańczowy, skórka pomarańczowa",
           "order": 1
         },
         {
@@ -39,7 +37,6 @@
           "image": "images/desserts/miodmal.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 2
         },
         {
@@ -50,7 +47,6 @@
           "image": "images/desserts/napoleon.webp",
           "badge": null,
           "placeholder": null,
-          "details": "Warstwy: chrupiące ciasto francuskie, krem budyniowy waniliowy",
           "order": 3
         },
         {
@@ -61,7 +57,6 @@
           "image": "images/desserts/napchok.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 4
         },
         {
@@ -72,7 +67,6 @@
           "image": "images/desserts/ester.webp",
           "badge": "Bezglutenowe",
           "placeholder": null,
-          "details": "Warstwy: biszkopt orzechowy, krem maślany waniliowy, fondant",
           "order": 5
         },
         {
@@ -83,7 +77,6 @@
           "image": "images/desserts/shutrus.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 6
         },
         {
@@ -94,7 +87,6 @@
           "image": "images/desserts/roladabez.webp",
           "badge": "Bezglutenowe",
           "placeholder": null,
-          "details": null,
           "order": 7
         },
         {
@@ -105,7 +97,6 @@
           "image": "images/desserts/serncap.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 8
         },
         {
@@ -116,7 +107,6 @@
           "image": "images/desserts/serniklawanda.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 9
         },
         {
@@ -127,7 +117,6 @@
           "image": "images/desserts/tartcyt.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 10
         },
         {
@@ -138,7 +127,6 @@
           "image": "images/desserts/tartczek.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 11
         },
         {
@@ -149,7 +137,6 @@
           "image": "images/desserts/tiramis.webp",
           "badge": null,
           "placeholder": null,
-          "details": "Warstwy: biszkopt nasączony espresso, krem mascarpone, kakao",
           "order": 12
         },
         {
@@ -160,7 +147,6 @@
           "image": "images/desserts/tmojito.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 13
         }
       ]
@@ -180,7 +166,6 @@
           "image": "images/briosz/karmeljabl.webp",
           "badge": null,
           "placeholder": null,
-          "details": "Briosz maślany, jabłka karmelizowane z cynamonem, krem waniliowy",
           "order": 0
         },
         {
@@ -191,7 +176,6 @@
           "image": "images/briosz/krembud.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 1
         },
         {
@@ -202,7 +186,6 @@
           "image": "images/briosz/snickersb.webp",
           "badge": null,
           "placeholder": null,
-          "details": "Briosz maślany, krem orzechowy, karmel solony, polewa czekoladowa, orzeszki ziemne",
           "order": 2
         },
         {
@@ -213,7 +196,6 @@
           "image": "images/briosz/malinczekol.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 3
         },
         {
@@ -224,7 +206,6 @@
           "image": "images/briosz/zmakiem.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 4
         },
         {
@@ -235,7 +216,6 @@
           "image": "images/briosz/lotus.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 5
         },
         {
@@ -246,7 +226,6 @@
           "image": "images/briosz/krembud.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 6
         },
         {
@@ -257,7 +236,6 @@
           "image": "images/briosz/krembud.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 7
         }
       ]
@@ -297,7 +275,6 @@
           "image": "images/cocktails/grzane_wino.webp",
           "badge": "18+",
           "placeholder": null,
-          "details": null,
           "order": 0
         },
         {
@@ -308,7 +285,6 @@
           "image": "images/cocktails/soksw.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 1
         },
         {
@@ -319,7 +295,6 @@
           "image": null,
           "badge": null,
           "placeholder": { "icon": "fa-martini-glass", "gradientClass": "menu-card__image--mojito" },
-          "details": "Mięta świeża, limonka, cukier trzcinowy, soda, lód kruszonka",
           "order": 2
         },
         {
@@ -330,7 +305,6 @@
           "image": null,
           "badge": null,
           "placeholder": { "icon": "fa-lemon", "gradientClass": "menu-card__image--lemonade" },
-          "details": null,
           "order": 3
         },
         {
@@ -341,7 +315,6 @@
           "image": null,
           "badge": null,
           "placeholder": { "icon": "fa-wine-glass", "gradientClass": "menu-card__image--blue" },
-          "details": null,
           "order": 4
         },
         {
@@ -352,7 +325,6 @@
           "image": null,
           "badge": "0%",
           "placeholder": { "icon": "fa-champagne-glasses", "gradientClass": "menu-card__image--aperol" },
-          "details": null,
           "order": 5
         },
         {
@@ -363,7 +335,6 @@
           "image": null,
           "badge": null,
           "placeholder": { "icon": "fa-blender", "gradientClass": "menu-card__image--milkshake" },
-          "details": null,
           "order": 6
         },
         {
@@ -374,7 +345,6 @@
           "image": null,
           "badge": null,
           "placeholder": { "icon": "fa-mug-saucer", "gradientClass": "menu-card__image--orange" },
-          "details": null,
           "order": 7
         }
       ]
@@ -394,7 +364,6 @@
           "image": "images/lunch/serniki.webp",
           "badge": null,
           "placeholder": null,
-          "details": "Syrniki domowe z twarogu, sos jagodowy, śmietana, miod",
           "order": 0
         },
         {
@@ -405,7 +374,6 @@
           "image": "images/lunch/szakszuka.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 1
         },
         {
@@ -416,7 +384,6 @@
           "image": "images/lunch/sniad_wiej.webp",
           "badge": null,
           "placeholder": null,
-          "details": "Jajka sadzone, boczek, kiełbasa domowa, pieczywo, masło, pomidor grillowany",
           "order": 2
         },
         {
@@ -427,7 +394,6 @@
           "image": "images/lunch/tost.webp",
           "badge": null,
           "placeholder": null,
-          "details": null,
           "order": 3
         }
       ]
