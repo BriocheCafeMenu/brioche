@@ -69,6 +69,37 @@
     --transition-slow: 400ms ease;
 }
 
+/* Closure Banner */
+.closure-banner {
+    background: var(--color-bg-dark);
+    color: var(--color-text-inverse);
+    text-align: center;
+    padding: var(--space-sm) var(--space-md);
+    position: relative;
+    z-index: 1001;
+}
+
+.closure-banner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.closure-banner__inner i {
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+
+.closure-banner__text {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
 html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
