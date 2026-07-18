@@ -1,16 +1,5 @@
-# Brioche Cafe - robots.txt
-# https://briochecafe.pl
+# Site inactive. Crawling is allowed so that the page-level
+# "noindex" directive can be seen and the site removed from search.
 
 User-agent: *
 Allow: /
-Allow: /img/
-
-# Disallow development/system files
-Disallow: /.git/
-Disallow: /.idea/
-
-# Sitemap location
-Sitemap: https://briochecafe.pl/sitemap.xml
-
-# Crawl-delay for polite crawling (optional, respected by some bots)
-# Crawl-delay: 1
